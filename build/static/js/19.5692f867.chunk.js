@@ -1,0 +1,2 @@
+(this.webpackJsonpmankan_admin_panel=this.webpackJsonpmankan_admin_panel||[]).push([[19],{791:function(n,e,t){"use strict";t.r(e);var a=t(0),l=t.n(a);function u(){return l.a.createElement("div",null,l.a.createElement("p",null,"Support"))}function r(){return l.a.createElement("div",null,l.a.createElement(u,null))}t.d(e,"default",(function(){return r}))}}]);
+//# sourceMappingURL=19.5692f867.chunk.js.map

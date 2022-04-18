@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="telephone=no" name="format-detection">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+  <!--<![endif]-->
+</style>
+ </head>
+ <body >
+  <div style="font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0;" class="es-wrapper-color">
+   <table class="es-wrapper" width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;padding:0;Margin:0;width:100%;height:100%;background-repeat:repeat;background-position:center top;">
+     <tr style="border-collapse:collapse;">
+      <td valign="top" style="padding:0;Margin:0;">
+       <table class="es-content" cellspacing="0" cellpadding="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%;">
+         <tr style="border-collapse:collapse;">
+          <td align="center" style="padding:0;Margin:0;">
+           <table class="es-content-body" width="800" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;">
+             <tr style="border-collapse:collapse;">
+              <td align="left" style="padding:0;Margin:0;padding-left:35px;padding-right:35px;padding-top:40px;">
+               <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;">
+                 <tr style="border-collapse:collapse;">
+                  <td width="730" valign="top" align="center" style="padding:0;Margin:0;">
+                   <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;">
+                     <tr style="border-collapse:collapse;">
+
+                     </tr>
+                     <tr style="border-collapse:collapse;">
+                      <td align="center" style="padding:0;Margin:0;padding-bottom:10px;"><h2 style="Margin:0;line-height:36px;mso-line-height-rule:exactly;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;font-size:30px;font-style:normal;font-weight:bold;color:#333333;"><br><br><%= data.firstLastNames%></h2><br></td>
+
+                     </tr>
+                   </table>
+                  <p>
+                          Հեռախոս: <span class="tel"><%= data.phone %></span><br />
+                          Էլ․ հասցե: <a class="email" href="<%= data.email %>"><%=  data.email %></a>
+
+                      </p>
+                      <img id="pic" src = <%= imgPathString %> alt = <%= imgPathString %> /></td>
+                 </tr>
+               </table></td>
+             </tr>
+           </table></td>
+         </tr>
+       </table>
+       <table class="es-content" cellspacing="0" cellpadding="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%;">
+         <tr style="border-collapse:collapse;">
+          <td align="center" style="padding:0;Margin:0;">
+           <table class="es-content-body" width="500" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;">
+             <tr style="border-collapse:collapse;">
+              <td align="left" style="padding:0;Margin:0;padding-left:35px;padding-right:35px;">
+               <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;">
+                 <tr style="border-collapse:collapse;">
+                  <td width="730" valign="top" align="center" style="padding:0;Margin:0;">
+                   <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;">
+                     <tr style="border-collapse:collapse;">
+                      <td align="left" bgcolor="transparent" style="Margin:0;padding-top:10px;padding-bottom:10px;padding-left:10px;padding-right:10px;">
+                       <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:550px;" class="cke_show_border" cellspacing="1" cellpadding="1" border="0" align="left" role="presentation">
+                         <tr style="border-collapse:collapse; border: 1px solid gainsboro;">
+                          <td style="padding:5px 10px 5px 5px;Margin:0; border: 1px solid gainsboro;" width="30%" align="left"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;line-height:32px;color:#333333;"><strong>Կրթություն</strong></p></td>
+                          <td style="padding:5px 5px;Margin:0;" width="70%" align="left"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;line-height:32px;color:#333333;">        <%for (let i = 0; i < data.educations.length; i++ ){%>
+            <h3><%= data.educations[i].university%></h3>
+            <p>Աստիճան: <strong> <%= data.educations[i].level%></strong><br />
+            <p>Բաժին: <strong> <%= data.educations[i].department%></strong><br />
+                Սկսել է: <strong><%= data.educations[i].beginningDate%></strong><br />
+            Ավարտել է: <strong><%= data.educations[i].finishingDate ? data.educations[i].finishingDate : ' '%></strong><br />
+            Դեռ սովորում է?: <strong><%= data.educations[i].stillStudying ? 'Այո': 'Ոչ'%></strong></p>
+<%}%>
+                            <!--%=--></p></td>
+                         </tr>
+                         <tr style="border-collapse:collapse; border: 1px solid gainsboro;">
+                          <td style="padding:5px 10px 5px 5px;Margin:0; border: 1px solid gainsboro;" width="30%" align="left"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;line-height:32px;color:#333333;"><strong>Լեզուների իմացություն</strong></p></td>
+                          <td style="padding:5px 5px;Margin:0;" width="70%" align="left"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;line-height:32px;color:#333333;"><%for (let i = 0; i < data.langs.length; i++ ){%>
+            <p><%= data.langs[i].lang%> : <strong><%= data.langs[i].level%></strong></p>
+           <!-- here must be language skills with grades -->
+        <%}%>
+                            <!--%=--></p></td>
+                         </tr>
+                         <tr style="border-collapse:collapse; border: 1px solid gainsboro;">
+                          <td style="padding:5px 10px 5px 5px;Margin:0; border: 1px solid gainsboro;" width="30%" align="left"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;line-height:32px;color:#333333;"><strong>Աշխատանքային Փորձ</strong></p></td>
+                          <td style="padding:5px 5px;Margin:0;" width="70%" align="left"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;line-height:32px;color:#333333;"> <%for (let i = 0; i < data.practices.length; i++ ){%>
+            <h2>Կազմակերպություններ</h2>
+            <p>Անուն: <strong><%= data.practices[i].company%></strong><br/>
+               Մասնագիտություն: <strong><%= data.practices[i].specialist%></strong><br />
+            Սկսել է: <strong><%= data.practices[i].beginningDate%></strong><br />
+            Ավարտել է: <strong><%= data.practices[i].finishingDate ? data.practices[i].finishingDate: ' ' %></strong><br />
+            Դեռ աշխատում է?: <strong><%= data.practices[i].stillWorking ? 'Այո': 'Ոչ' %></strong></p>
+
+        <%}%>
+                            <!--%=--></p></td>
+                         </tr>
+                         <tr style="border-collapse:collapse; border: 1px solid gainsboro;">
+                          <td style="padding:5px 10px 5px 5px;Margin:0; border: 1px solid gainsboro;" width="30%" align="left"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;line-height:32px;color:#333333;"><strong>Ծրագրային հմտություններ</strong></p></td>
+                          <td style="padding:5px 5px;Margin:0;" width="70%" align="left"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;line-height:32px;color:#333333;"><%for (let i = 0; i < data.programAbilities.length; i++ ){%>
+
+            <p><%= data.programAbilities[i].name %>: <strong><%= data.programAbilities[i].level %></strong></p>
+
+        <%}%>                            <!--%=--></p></td>
+                         </tr>
+                         <tr style="border-collapse:collapse; border: 1px solid gainsboro;">
+                          <td style="padding:5px 10px 5px 5px;Margin:0; border: 1px solid gainsboro;" width="30%" align="left"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;line-height:32px;color:#333333;"><strong>Նախասիրություններ</strong></p></td>
+                          <td style="padding:5px 5px;Margin:0;" width="70%" align="left"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;line-height:32px;color:#333333;"><%for (let i = 0; i < data.hobbies.length; i++ ){%>
+<p>        <%= data.hobbies[i] %> <p>
+        <%}%>
+                            <!--%=--></p></td>
+                         </tr>
+                         <tr style="border-collapse:collapse; border: 1px solid gainsboro;">
+                          <td style="padding:5px 10px 5px 5px;Margin:0; border: 1px solid gainsboro;" width="30%" align="left"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;line-height:32px;color:#333333;"><strong>Սոցիալական ցանցեր</strong></p></td>
+                          <td style="padding:5px 5px;Margin:0;" width="70%" align="left"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;line-height:32px;color:#333333;"><%for (let i = 0; i < data.socialNets.length; i++ ){%>
+      <p> <%= data.socialNets[i] %></ </p>
+        <%}%>
+                            <!--%=--></p></td>
+                         </tr>
+                         <tr style="border-collapse:collapse; border: 1px solid gainsboro;">
+                          <td style="padding:5px 10px 5px 5px;Margin:0; border: 1px solid gainsboro;" width="30%" align="left"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;line-height:32px;color:#333333;"><strong>Սպասելիքներ մեր թիմից</strong></p></td>
+                          <td style="padding:5px 5px;Margin:0;" width="70%" align="left"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;line-height:32px;color:#333333;"> <%= data.description1%>
+                            <!--%=--></p></td>
+                         </tr>
+                          <tr style="border-collapse:collapse; border: 1px solid gainsboro;">
+                          <td style="padding:5px 10px 5px 5px;Margin:0; border: 1px solid gainsboro;" width="30%" align="left"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;line-height:32px;color:#333333;"><strong>Ինչ հաստիք կցանկանիք</strong></p></td>
+                          <td style="padding:5px 5px;Margin:0;" width="70%" align="left"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;line-height:32px;color:#333333;"><%= data.description2%></
+                            <!--%=--></p></td>
+                         </tr>
+                       </table></td>
+                     </tr>
+                   </table></td>
+                 </tr>
+               </table></td>
+             </tr>
+           </table></td>
+         </tr>
+       </table>
+       </td>
+         </tr>
+       </table></td>
+     </tr>
+   </table>
+  </div>
+ </body>
+</html>

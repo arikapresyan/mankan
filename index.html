@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello world</title>
+</head>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    function dowloadCsv(path){
+      window.location.href="http://localhost:3000/api/admin/download/"+path
+    }
+     // dowloadCsv('4-2-2020-23-12.csv')
+    var socket = io();
+    socket.on('message', function(data){document.write(data)});
+    socket.on('csv_completed', function(data){
+        console.log(data)
+        dowloadCsv(data.path)});
+    socket.emit('clientEvent', 'Sent an event from   the client!');
+    // socket.on('newclientconnectS', function(data){document.write(data)});
+</script>
+<body>Hello world</body>
+</html>
