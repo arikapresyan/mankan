@@ -1,0 +1,48 @@
+.mobile_search {
+  padding: 20px 30px;
+  background: #fff;
+  border-bottom: 1px solid #f1f1f1;
+  margin-bottom: 20px;
+  .myHeaderSearch {
+    width: 100%;
+    .ant-input {
+      border-radius: 35px;
+      background: #f1f1f1;
+      height: 40px;
+      border: none;
+    }
+    > div {
+      > div {
+        line-height: 35px;
+        a {
+          color: #333;
+        }
+        &:hover {
+          a {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mobile_menu {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 98;
+  top: 0;
+  left: 0;
+  padding: 20px 40px;
+  background: white;
+  .menu_icon {
+    max-height: 40px;
+    width: 20px;
+    margin-right: 10px;
+  }
+  &.is_open {
+    display: block;
+  }
+}

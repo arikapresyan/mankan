@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default (function (product) {\n  var percent = product.percent;\n  var oldPrice = product.xmlPrice;\n  var newPrice = percent ? product.price : product.xmlPrice;\n  return {\n    oldPrice: oldPrice,\n    newPrice: newPrice\n  };\n});","map":null,"metadata":{},"sourceType":"module"}

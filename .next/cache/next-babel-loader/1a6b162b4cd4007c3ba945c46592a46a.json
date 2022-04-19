@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { createActions } from 'redux-actions';\nexport const {\n  getMenuList,\n  getMenuListSuccess,\n  getMenuListError,\n  getMenuListReset\n} = createActions('GET_MENU_LIST', 'GET_MENU_LIST_SUCCESS', 'GET_MENU_LIST_ERROR', 'GET_MENU_LIST_RESET');","map":null,"metadata":{},"sourceType":"module"}

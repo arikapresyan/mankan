@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const selectMainSlides = state => state.mainSlides.data;\nexport const selectMainSlidesLoading = state => state.mainSlides.loading;","map":null,"metadata":{},"sourceType":"module"}

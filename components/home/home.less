@@ -1,0 +1,758 @@
+.mainSlider {
+  position: relative;
+  .owl-stage-outer {
+    width: 100%;
+  }
+  .swiper-container {
+    width: 100%;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-image: url("../../assets/images/icons/next.svg") !important;
+    opacity: 0;
+    color: #c40a04;
+    height: 50px;
+    width: 35px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.5s;
+    &:after {
+      font-size: 20px;
+    }
+  }
+  .swiper-button-next {
+    right: 20px;
+  }
+  .swiper-button-prev {
+    left: 20px;
+  }
+  .swiper-slide {
+    img {
+      width: 100%;
+    }
+  }
+  .owl-nav {
+    margin: 0;
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    button.owl-prev,
+    button.owl-next {
+      position: absolute;
+      top: 45%;
+      background: #c40a04;
+      color: #fff;
+      height: 35px;
+      width: 35px;
+      outline: none;
+      transition: all 0.5s;
+      &:hover {
+        background: #c40a04;
+        opacity: 0.9;
+        transition: all 0.5s;
+      }
+      span {
+        font-size: 26px;
+        line-height: 28px;
+      }
+    }
+    button.owl-prev {
+      left: 20px;
+    }
+    button.owl-next {
+      right: 20px;
+    }
+  }
+  &:hover {
+    .swiper-button-next,
+    .swiper-button-prev {
+      opacity: 1;
+    }
+  }
+}
+#select_by_age_section {
+  padding-top: 30px;
+  .filter_by_age {
+    padding: 20px 0;
+    margin-top: 10px;
+    background: #fff;
+  }
+  .ant-btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    button {
+      flex-grow: 1;
+      margin: 5px 0;
+      border-radius: 50%;
+      height: 70px;
+      width: 70px;
+      max-width: 70px;
+      border: 1px solid #ababab;
+      padding-right: 0;
+      padding-left: 0;
+
+      span {
+        font-family: "NotoSansArmenian-Bold", "Roboto-Bold", sans-serif;
+        font-size: 13px;
+        line-height: 18px;
+        color: #333;
+      }
+      p {
+        font-family: "NotoSansArmenian-Medium", "Roboto-Medium", sans-serif;
+        font-size: 14px;
+        line-height: 15px;
+        color: #333;
+        margin: 0;
+        display: none;
+      }
+      &:hover {
+        background: #c40a04;
+        border-color: #c40a04;
+        span,
+        p {
+          color: #ffffff;
+        }
+      }
+      &.selected {
+        background: #c40a04;
+        border-color: #c40a04;
+        box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.28);
+        span,
+        p {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+#choose_gift_section {
+  display: none;
+  .choose_gift_wrapper {
+    background: #fff;
+    padding: 30px 0;
+    h3 {
+      font-family: "NotoSansArmenian-SemiBold", "Roboto-Medium", sans-serif;
+      font-size: 16px;
+      line-height: 30px;
+      margin-bottom: 15px;
+      display: none;
+    }
+    .choose_age {
+      padding: 0 !important;
+      h3 {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .ant-btn-group {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        button {
+          height: 45px;
+          width: 45px;
+          max-width: 45px;
+          border-radius: 50%;
+          flex-grow: 1;
+          border: 1px solid #ababab;
+          margin: 5px;
+          padding: 0;
+          font-family: "NotoSansArmenian-Medium", "Roboto-Medium", sans-serif;
+          span {
+            font-size: 14px;
+          }
+          p {
+            font-size: 14px;
+            display: none;
+          }
+          &:hover {
+            border-color: #c40a04;
+            background-color: #c40a04;
+            span,
+            p {
+              color: #fff;
+            }
+          }
+          &.selected {
+            background: #c40a04;
+            border-color: #c40a04;
+            box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.28);
+            p,
+            span {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .choose_gender {
+      .ant-radio-inner {
+        display: none;
+        width: 20px;
+        height: 20px;
+        border-color: #ababab;
+        &:after {
+          width: 12px;
+          height: 12px;
+          top: 3px;
+          left: 3px;
+          background-color: #fc3b3b;
+        }
+      }
+      .ant-radio-group {
+        width: 100%;
+      }
+      .ant-radio-wrapper {
+        font-size: 12px;
+        line-height: 40px;
+        color: #333;
+        border: 1px solid #ababab;
+        border-radius: 35px;
+        width: 48%;
+        float: left;
+        margin: 0;
+        text-align: center;
+        &:last-child {
+          float: right;
+        }
+        &.ant-radio-wrapper-checked {
+          background: #fc3b3b;
+          border-color: #fc3b3b;
+          color: #fff;
+        }
+        span {
+          font-size: 14px;
+        }
+        &:hover {
+          span {
+            color: #fc3b3b;
+          }
+          .ant-radio-inner {
+            border-color: #fc3b3b;
+          }
+        }
+      }
+    }
+    .meaning {
+      .ant-select {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+        .ant-select-selection {
+          border-radius: 25px;
+          height: 40px;
+          border-color: #ababab;
+        }
+        .ant-select-selection__rendered {
+          line-height: 40px;
+          margin-left: 20px;
+          color: #828282;
+          font-size: 14px;
+        }
+        .ant-select-arrow {
+          color: #828282;
+          font-size: 17px;
+        }
+      }
+      .ant-btn {
+        float: right;
+        border-radius: 25px;
+        font-size: 16px;
+        font-family: "NotoSansArmenian-Medium", "Roboto-Medium", sans-serif;
+        height: 44px;
+        min-width: 150px;
+        background: #fc3b3b;
+        border: none;
+        .shadow(0, 3px, 6px,  0, rgba(0, 0, 0, 0.2));
+        &:hover {
+          background: #c40a04;
+        }
+      }
+    }
+    .ant-col {
+      margin: 10px 0;
+    }
+    .price_slider {
+      .ant-slider {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+      }
+      .ant-col {
+        padding: 0 !important;
+      }
+      .ant-input-number {
+        width: 48%;
+        max-width: 48%;
+        background: #fff;
+        height: 35px;
+        border-color: #ababab;
+        &:last-child {
+          float: right;
+        }
+      }
+      .line {
+        display: none;
+      }
+    }
+  }
+}
+.slider_wrapper {
+  margin: 30px 0;
+  .view_more {
+    text-align: center;
+  }
+}
+.choose_gift_modal {
+  max-width: 100% !important;
+  width: 100% !important;
+  .ant-modal-body {
+    padding: 0 15px;
+  }
+  .ant-modal-close {
+    display: none;
+  }
+  .ant-modal-content {
+    border-radius: 0;
+    padding: 15px 0;
+  }
+  .ant-modal-footer {
+    border: none;
+    padding-right: 30px;
+    > div {
+      display: flex;
+      flex-direction: row-reverse;
+      button {
+        height: 40px;
+        border: none;
+        &:first-child {
+          span {
+            color: #333;
+            font-size: 24px;
+            line-height: 35px;
+            display: block;
+            height: 100%;
+            width: 100%;
+          }
+          width: 40px;
+          border-radius: 50%;
+          background: #eaeaea;
+          padding: 0;
+          margin-left: 10px;
+        }
+        &:nth-child(2) {
+          border-radius: 35px;
+          background: #fc3b3b;
+          color: #fff;
+          font-size: 16px;
+          min-width: 150px;
+        }
+        &:hover {
+          background: #c40a04;
+          span {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  #choose_gift_section {
+    display: block;
+    .section_title {
+      display: none;
+    }
+    .choose_gift_wrapper {
+      padding: 0;
+    }
+
+    .choose_price {
+      display: none;
+    }
+    .meaning {
+      button {
+        display: none;
+      }
+      .ant-select {
+        margin-bottom: 0;
+      }
+    }
+    .ant-select-selection__rendered {
+      color: #c8c8c8 !important;
+    }
+    .choose_price_mobile {
+      .ant-input-number {
+        width: calc(50% - 30px);
+        border-radius: 25px;
+        height: 42px;
+        line-height: 42px;
+        box-shadow: none;
+
+        &:hover {
+          border-color: #d9d9d9;
+        }
+        .ant-input-number-handler-wrap {
+          display: none;
+        }
+        &.ant-input-number-focusd:focus {
+          border-color: #828282;
+          box-shadow: none;
+        }
+      }
+      .line {
+        height: 1px;
+        width: 30px;
+        background: #ababab;
+        display: inline-block;
+        margin: 0 15px;
+      }
+      .ant-input-number-input {
+        border: 1px solid #ababab;
+        height: 42px;
+        border-radius: 35px;
+        line-height: 42px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 320px) {
+  #select_by_age_section {
+    .ant-btn-group {
+      button {
+        margin: 7px 2px;
+        height: 95px;
+        width: 95px;
+        max-width: 95px;
+        span {
+          font-size: 18px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 414px) {
+  .mainSlider {
+    .swiper-slide img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  #select_by_age_section {
+    .ant-btn-group {
+      button {
+        margin: 10px 22px;
+        height: 100px;
+        width: 100px;
+        max-width: 100px;
+        span {
+          font-size: 20px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 567px) {
+  #choose_gift_section {
+    .choose_gift_wrapper {
+      h3 {
+        margin-bottom: 10px;
+      }
+      .choose_price {
+        clear: left;
+      }
+    }
+  }
+  #select_by_age_section {
+    .ant-btn-group {
+      flex-wrap: wrap;
+      button {
+        margin: 10px 4px;
+        height: 70px;
+        width: 70px;
+        max-width: 70px;
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  #choose_gift_section {
+    .choose_gift_wrapper {
+      .choose_age {
+        .ant-btn-group {
+          button {
+            height: 70px;
+            width: 70px;
+            max-width: 70px;
+            padding: 10px 10px;
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .choose_gender {
+        .ant-radio-wrapper {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 767px) {
+//   .mainSlider {
+//     padding-top: 50px;
+//     background-color: #fff;
+//   }
+// }
+
+@media screen and (min-width: 768px) {
+  .slider_wrapper {
+    margin: 40px 0;
+    .view_more {
+      float: right;
+    }
+  }
+  .mainSlider {
+    position: relative;
+    .swiper-button-next,
+    .swiper-button-prev {
+      height: 50px;
+      width: 50px;
+      &::after {
+        font-size: 25px;
+      }
+    }
+    .owl-nav {
+      button.owl-prev,
+      button.owl-next {
+        height: 50px;
+        width: 50px;
+        span {
+          font-size: 40px;
+          line-height: 29px;
+        }
+      }
+    }
+  }
+  #select_by_age_section {
+    .ant-btn-group {
+      button {
+        margin: 0 8px 0 0;
+        height: 75px;
+        width: 75px;
+        min-width: 75px;
+        &:last-child {
+          margin: 0;
+        }
+        p {
+          display: block;
+          margin-top: 5px;
+          font-size: 10px;
+        }
+        span {
+          font-size: 18px;
+        }
+      }
+    }
+    .filter_by_age {
+      background: #fff;
+      margin-top: 20px;
+      padding: 40px 0;
+    }
+  }
+  #choose_gift_section {
+    display: block;
+    .choose_price_mobile {
+      display: none;
+    }
+    .choose_gift_wrapper {
+      h3 {
+        display: block;
+      }
+      .choose_age {
+        .ant-btn-group {
+          justify-content: left;
+          button {
+            height: 45px;
+            width: 45px;
+            max-width: 45px;
+            padding: 10px 5px;
+            margin: 3px;
+            span {
+              font-size: 14px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      .choose_gender {
+        .ant-radio-inner {
+          display: block;
+        }
+        .ant-radio-wrapper {
+          border: none;
+          border-radius: 35px;
+          width: auto;
+          float: none;
+          text-align: left;
+          display: block;
+          &:last-child {
+            float: none;
+          }
+          &.ant-radio-wrapper-checked {
+            background: none;
+            color: #333;
+            display: block;
+          }
+        }
+      }
+      .meaning {
+        .ant-select {
+          display: block;
+        }
+      }
+      .price_slider {
+        .ant-slider {
+          max-width: 250px;
+          margin-top: 20px;
+        }
+        .ant-input-number {
+          width: 41%;
+          max-width: 110px;
+          background: #fff;
+          &:last-child {
+            float: none;
+          }
+        }
+        .line {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .slider_wrapper {
+    margin: 50px 0;
+  }
+  #select_by_age_section {
+    .ant-btn-group {
+      display: flex;
+      button {
+        margin: 0 15px 0 0;
+        height: 130px;
+        min-width: 130px;
+        border-radius: 50%;
+        p {
+          font-size: 18px;
+        }
+        span {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  #choose_gift_section {
+    .choose_gift_wrapper {
+      .choose_price {
+        clear: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #select_by_age_section {
+    .ant-btn-group {
+      button {
+        height: 160px;
+        min-width: 160px;
+      }
+    }
+  }
+  #choose_gift_section {
+    .choose_gift_wrapper {
+      .choose_age {
+        .ant-btn-group {
+          button {
+            height: 55px;
+            width: 55px;
+            max-width: 55px;
+            margin: 3px;
+            span {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  #choose_gift_section {
+    .choose_gift_wrapper {
+      .choose_age {
+        .ant-btn-group {
+          button {
+            margin: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #select_by_age_section {
+    .ant-btn-group {
+      button {
+        height: 190px;
+        min-width: 190px;
+      }
+    }
+  }
+  #choose_gift_section {
+    .choose_gift_wrapper {
+      .choose_age {
+        .ant-btn-group {
+          button {
+            height: 70px;
+            width: 70px;
+            max-width: 70px;
+            margin: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .mainSlider {
+    position: relative;
+    .swiper-button-next,
+    .swiper-button-prev {
+      height: 100px;
+      width: 35px;
+      &::after {
+        font-size: 42px;
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default (product => {\n  const {\n    percent\n  } = product;\n  const oldPrice = product.xmlPrice;\n  const newPrice = percent ? product.price : product.xmlPrice;\n  return {\n    oldPrice,\n    newPrice\n  };\n});","map":null,"metadata":{},"sourceType":"module"}

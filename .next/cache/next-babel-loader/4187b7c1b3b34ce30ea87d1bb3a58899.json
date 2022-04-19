@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { createActions } from 'redux-actions';\nexport const {\n  changePage,\n  resetChangePage\n} = createActions('CHANGE_PAGE', 'RESET_CHANGE_PAGE');","map":null,"metadata":{},"sourceType":"module"}

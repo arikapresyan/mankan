@@ -1,0 +1,1 @@
+{"ast":null,"code":"// eslint-disable-next-line no-unused-vars\nimport React from 'react';\nimport { useSelector } from 'react-redux';\nimport { selectMenuList } from './reducer';\n\nfunction uesGetMenuList() {\n  var list = useSelector(selectMenuList);\n  return {\n    list: list\n  };\n}\n\nexport default uesGetMenuList;","map":null,"metadata":{},"sourceType":"module"}

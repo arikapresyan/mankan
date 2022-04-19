@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\nimport Spin from 'antd/lib/spin';\nimport './catalog-loader.less';\n\nvar CatalogLoader = function CatalogLoader() {\n  return __jsx(\"div\", {\n    className: \"catalog_loader\"\n  }, __jsx(Spin, null));\n};\n\nexport default CatalogLoader;","map":null,"metadata":{},"sourceType":"module"}

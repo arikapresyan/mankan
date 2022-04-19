@@ -1,0 +1,97 @@
+.product_usefulness_box {
+  margin-top: 38px;
+  h2 {
+    color: #333;
+    line-height: 30px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: "NotoSansArmenian-Bold", "Roboto-Bold", sans-serif;
+  }
+
+  .product_usefulness_list_item {
+    overflow: hidden;
+    .icon {
+      width: 60px;
+      margin-right: 15px;
+      margin-bottom: 10px;
+      float: left;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    .info {
+      overflow: hidden;
+      h3 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        a {
+          color: #333;
+        }
+        &:hover {
+          cursor: pointer;
+          a {
+            &:hover {
+              color: #969696;
+            }
+          }
+        }
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .product_usefulness_box {
+    .product_usefulness_list_item {
+      .icon {
+        width: 70px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .product_usefulness_box {
+    h2 {
+      border-bottom: 2px solid #d4d4d4;
+    }
+    .product_usefulness_list_item {
+      .icon {
+        width: 90px;
+      }
+      .info {
+        ul {
+          list-style: none;
+          padding-left: 0;
+          li {
+            font-size: 11px;
+            line-height: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .product_usefulness_box {
+    .product_usefulness_list_item {
+      .icon {
+        width: 80px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product_usefulness_box {
+    .product_usefulness_list_item {
+      .icon {
+        width: 90px;
+      }
+    }
+  }
+}

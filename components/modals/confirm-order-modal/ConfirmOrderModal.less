@@ -1,0 +1,318 @@
+.transition(@sec: 0.4s) {
+  -webkit-transition: all @sec;
+  -moz-transition: all @sec;
+  -o-transition: all @sec;
+  transition: all @sec;
+}
+
+.shadow(@h-offset: 3px, @v-offset: 3px, @blur: 5px, @spread: 0, @color: rgba(0, 0, 0, 0.25)) {
+  -webkit-box-shadow: @h-offset @v-offset @blur @spread @color;
+  -moz-box-shadow: @h-offset @v-offset @blur @spread @color;
+  box-shadow: @h-offset @v-offset @blur @spread @color;
+}
+
+.confirm_order_modal {
+  width: 90% !important;
+  top: 10px;
+  margin-top: 10px;
+  .ant-modal-content {
+    border-radius: 12px;
+  }
+  .ant-modal-header {
+    border-radius: 12px 12px 0 0;
+    height: 50px;
+    padding: 12px 24px;
+    .ant-modal-title {
+      color: #333;
+      font-size: 16px;
+      font-family: "NotoSansArmenian-Bold", "Roboto-Bold", sans-serif;
+    }
+  }
+  .ant-modal-close {
+    margin-top: 10px;
+    margin-right: 15px;
+  }
+  .ant-modal-close-x {
+    color: #333;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    .transition();
+    &:hover {
+      .transition();
+      color: #fc3b3b;
+    }
+  }
+  .ant-form {
+    .ant-input {
+      height: 40px;
+      border-radius: 25px;
+      padding-left: 20px;
+      font-size: 13px;
+      &::-webkit-input-placeholder {
+        color: #828282;
+      }
+      &::-moz-placeholder {
+        color: #828282;
+      }
+      &:-moz-placeholder {
+        color: #828282;
+      }
+      &:-ms-input-placeholder {
+        color: #828282;
+      }
+    }
+    .ant-select-selection {
+      height: 40px;
+      border-radius: 25px;
+      padding-left: 7px;
+    }
+    .ant-form-item {
+      margin-bottom: 18px;
+    }
+    .ant-form-item-label {
+      color: #333;
+      font-size: 16px;
+    }
+    .ant-select-selection__rendered {
+      line-height: 40px;
+      .ant-select-selection__placeholder {
+        color: #828282;
+        font-size: 13px;
+      }
+    }
+    .delivery_date {
+      clear: both;
+    }
+    .payment_type {
+      margin-top: 25px;
+      p {
+        font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+      .payment_type_item {
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 14px;
+        .ant-btn {
+          display: block;
+          margin: 10px auto;
+          height: 55px;
+          width: 55px;
+          background-repeat: no-repeat;
+          background-position: center;
+          .transition();
+          &:hover {
+            border-color: #fc3b3b;
+            .transition();
+          }
+
+          &.credit_card_btn {
+            background-image: url("../../../assets/images/icons/credit_card.png");
+            background-size: 30px;
+          }
+          &.cash_btn {
+            background-image: url("../../../assets/images/icons/cash.png");
+          }
+          &.bonus_btn {
+            background-image: url("../../../assets/images/icons/bonus.png");
+          }
+        }
+        &.selected {
+          .ant-btn {
+            background-color: #fc3b3b;
+            border-color: #fc3b3b;
+            &.credit_card_btn {
+              background-image: url("../../../assets/images/icons/credit_card_hover.png");
+            }
+            &.cash_btn {
+              background-image: url("../../../assets/images/icons/cash_hover.png");
+            }
+            &.bonus_btn {
+              background-image: url("../../../assets/images/icons/bonus_hover.png");
+            }
+          }
+        }
+      }
+    }
+    .bonus_quantity {
+      margin-right: 15px;
+    }
+  }
+  .final_calculation {
+    margin-top: 30px;
+    h2 {
+      color: #333;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 15px;
+    }
+    .calculation_box {
+      border: 1px solid #d4d4d4;
+      border-radius: 12px;
+      padding: 0 20px;
+    }
+    .calculation_item {
+      padding-top: 25px;
+      padding-bottom: 6px;
+      border-top: 1px solid #d4d4d4;
+      font-size: 16px;
+      overflow: hidden;
+      &:first-child {
+        border: none;
+      }
+      .info_tooltip {
+        margin-left: 10px;
+      }
+    }
+    .name {
+      float: left;
+      padding-right: 10px;
+      font-size: 14px;
+    }
+    .value {
+      float: right;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .total_price {
+      color: #fc3b3b;
+      font-size: 22px;
+    }
+
+    .confirm_order_btn {
+      width: 100%;
+      border-radius: 35px;
+      height: 44px;
+      background: #7bc17a;
+      border: none;
+      color: #fff;
+      font-size: 13px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      .shadow(0, 3px, 5px, 0, rgba(0, 0, 0, 0.16));
+      .transition();
+      &:hover {
+        .transition();
+        background: #86cc85;
+      }
+    }
+  }
+  .info_tooltip {
+    img {
+      margin-left: 0;
+    }
+  }
+  .reportItem {
+    align-items: center;
+    margin-bottom: 18px;
+    .mt--15 {
+      margin-top: 0;
+    }
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+  .payment_method {
+    font-weight: bold;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content_space-between {
+  justify-content: space-between;
+}
+
+.align-items_center {
+  align-items: center;
+}
+
+.accetpCondition {
+  a {
+    color: #2d96f1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .confirm_order_modal {
+    width: 500px !important;
+    top: 40px;
+    .ant-modal-body {
+      padding: 30px 45px;
+    }
+    .ant-form {
+      .ant-input {
+        font-size: 14px;
+      }
+      .ant-select-selection__rendered {
+        .ant-select-selection__placeholder {
+          font-size: 14px;
+        }
+      }
+      .apartment {
+        float: left;
+        width: 48%;
+      }
+      .entrance {
+        width: 48%;
+        float: right;
+      }
+      .payment_type {
+        .payment_type_item {
+          margin-right: 30px;
+        }
+      }
+      .street {
+        width: 320px;
+      }
+      .mt--15 {
+        margin-top: 0;
+      }
+    }
+    .final_calculation {
+      .calculation_box {
+        padding: 0 40px;
+        position: relative;
+        min-height: 540px;
+        .bottomContainer {
+          position: absolute;
+          bottom: 0;
+        }
+      }
+      .confirm_order_btn {
+        height: 44px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .confirm_order_modal {
+    width: 90% !important;
+    .final_calculation {
+      margin-top: 0;
+      .confirm_order_btn {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .confirm_order_modal {
+    width: 1000px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .confirm_order_modal {
+    .accetpCondition {
+      padding-top: 30px;
+    }
+  }
+}

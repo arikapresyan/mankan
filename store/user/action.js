@@ -1,0 +1,31 @@
+import { createActions } from 'redux-actions';
+
+export const {
+  login,
+  loginSuccess,
+  authorizationError,
+  logout,
+  logoutSuccess,
+  registration,
+  resetUserReducer,
+  setLang,
+  authorizationLoading,
+  getUserData,
+  getUserDataLoading,
+  getUserDataSuccess,
+  getUserDataError,
+} = createActions(
+  'LOGIN',
+  'LOGIN_SUCCESS',
+  'AUTHORIZATION_ERROR',
+  'RESET_USER_REDUCER',
+  'LOGOUT',
+  'LOGOUT_SUCCESS',
+  'REGISTRATION',
+  'SET_LANG',
+  'AUTHORIZATION_LOADING',
+  'GET_USER_DATA',
+  'GET_USER_DATA_LOADING',
+  'GET_USER_DATA_SUCCESS',
+  'GET_USER_DATA_ERROR',
+);

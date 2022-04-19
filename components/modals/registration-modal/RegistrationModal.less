@@ -1,0 +1,143 @@
+.transition(@sec: 0.4s) {
+  -webkit-transition: all @sec;
+  -moz-transition: all @sec;
+  -o-transition: all @sec;
+  transition: all @sec;
+}
+
+.shadow(@h-offset: 3px, @v-offset: 3px, @blur: 5px, @spread: 0, @color: rgba(0, 0, 0, 0.25)) {
+  -webkit-box-shadow: @h-offset @v-offset @blur @spread @color;
+  -moz-box-shadow: @h-offset @v-offset @blur @spread @color;
+  box-shadow: @h-offset @v-offset @blur @spread @color;
+}
+
+.registration_modal {
+  width: 90% !important;
+  .ant-modal-content {
+    border-radius: 12px;
+  }
+  h2 {
+    color: #333;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 35px;
+    font-family: "NotoSansArmenian-SemiBold", "Roboto-SemiBold", sans-serif;
+  }
+  .ant-modal-close {
+    top: 24px;
+    right: 24px;
+  }
+  .ant-modal-close {
+    top: 16px;
+    right: 16px;
+    .ant-modal-close-x {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        color: #c40a04;
+      }
+    }
+  }
+  .ant-form {
+    .ant-form-item {
+      margin-bottom: 18px;
+    }
+    .ant-input {
+      height: 40px;
+      border-radius: 25px;
+      padding-left: 20px;
+      &::-webkit-input-placeholder {
+        color: #828282;
+      }
+      &::-moz-placeholder {
+        color: #828282;
+      }
+      &:-moz-placeholder {
+        color: #828282;
+      }
+      &:-ms-input-placeholder {
+        color: #828282;
+      }
+    }
+    .ant-checkbox-wrapper.terms {
+      font-size: 12px;
+      margin-top: -2px;
+      display: block;
+      &:hover {
+        color: #969696;
+      }
+      a {
+        color: #2d96f1;
+        .transition();
+
+        &:hover {
+          color: #969696;
+          .transition();
+        }
+      }
+    }
+    .registration_btn {
+      text-align: center;
+      margin-top: 20px;
+      .ant-btn {
+        border-radius: 50px;
+        min-width: 150px;
+        height: 44px;
+        line-height: 44px;
+        font-family: NotoSansArmenian-Medium, Roboto-Medium, sans-serif;
+        font-size: 16px;
+        background: #fc3b3b;
+        border: none;
+        .shadow(0, 3px, 6px,  0, rgba(0, 0, 0, 0.2));
+        .transition();
+        span {
+          font-size: 18px;
+          line-height: 24px;
+          font-family: "NotoSansArmenian-Medium", "Roboto-Medium", sans-serif;
+        }
+        &:hover {
+          background: #c40a04;
+          .transition();
+        }
+      }
+    }
+  }
+  .ant-checkbox-wrapper {
+    .ant-checkbox {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      + span {
+        display: inline-block;
+        padding: 0 0 0 25px;
+        font-size: 12px;
+        line-height: 20px;
+        font-family: "Segoe UI", sans-serif;
+      }
+    }
+    .ant-checkbox-inner {
+      height: 18px;
+      width: 18px;
+    }
+  }
+}
+@media screen and (min-width: 567px) {
+  .registration_modal {
+    width: 500px !important;
+    .ant-modal-close {
+      top: 40px;
+      right: 35px;
+      .ant-modal-close-x {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .ant-modal-body {
+      padding: 30px 45px 27px;
+    }
+  }
+}

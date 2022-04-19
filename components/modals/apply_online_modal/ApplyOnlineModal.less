@@ -1,0 +1,203 @@
+.apply_online_modal {
+  width: 90% !important;
+  top: 10px !important;
+  .ant-modal-content {
+    border-radius: 12px;
+    .ant-divider-horizontal {
+      background-color: #d4d4d4;
+      height: 0.5px;
+    }
+  }
+  .ant-modal-header {
+    height: 50px;
+    border-radius: 12px 12px 0 0;
+    padding: 13px 24px;
+    .ant-modal-title {
+      color: #333;
+      font-size: 16px;
+      font-family: "NotoSansArmenian-Bold", "Roboto-Bold", sans-serif;
+    }
+  }
+  .ant-modal-close {
+    margin-top: 8px;
+    margin-right: 15px;
+  }
+  .ant-modal-close-x {
+    color: #333;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    .transition();
+    &:hover {
+      .transition();
+      color: #c40a04;
+    }
+  }
+  .ant-form {
+    .form_info_box {
+      h3 {
+        font-size: 18px;
+        color: #333;
+      }
+    }
+    .assess {
+      .ant-checkbox-group {
+        .ant-checkbox-inner {
+          height: 25px;
+          width: 25px;
+          border-radius: 50%;
+          border-color: #d9d9d9;
+          background: #fff;
+          &:after {
+            display: none;
+          }
+        }
+        .ant-checkbox-input:focus {
+          outline: none;
+        }
+        .ant-checkbox-checked::after {
+          display: none;
+        }
+      }
+    }
+    .add_new_field {
+      clear: both;
+    }
+    .ant-btn-dashed {
+      color: #333;
+      font-size: 12px;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+    }
+    .ant-checkbox-inner {
+      width: 20px;
+      height: 20px;
+      &:after {
+        left: 29%;
+      }
+    }
+    .checkbox {
+      .ant-form-item-children:hover {
+        label {
+          color: #969696;
+        }
+        .ant-checkbox-inner {
+          border-color: #c7c7c7;
+        }
+      }
+    }
+    .ant-checkbox-wrapper {
+      color: #333;
+    }
+    .ant-form-item {
+      margin-bottom: 5px;
+    }
+    .ant-calendar-picker {
+      width: 100%;
+    }
+    .ant-form-item-label {
+      > label {
+        font-size: 14px;
+      }
+    }
+    .ant-upload {
+      font-size: 14px;
+      font-family: "NotoSansArmenian-Bold", "Roboto-Bold", sans-serif;
+      button {
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+        color: #000;
+        font-size: 14px;
+        line-height: 19px;
+        font-family: "NotoSansArmenian-Medium", "Roboto-Medium", sans-serif;
+      }
+    }
+    .ant-input {
+      height: 40px;
+      border-radius: 25px;
+      padding-left: 20px;
+      &::-webkit-input-placeholder {
+        color: #828282;
+      }
+      &::-moz-placeholder {
+        color: #828282;
+      }
+      &:-moz-placeholder {
+        color: #828282;
+      }
+      &:-ms-input-placeholder {
+        color: #828282;
+      }
+    }
+    .ant-calendar-picker {
+      .ant-input {
+        border-color: #aaa8a8 !important;
+      }
+    }
+  }
+  .send_btn {
+    height: 44px;
+    margin: 30px auto 15px;
+    border-radius: 35px;
+    display: block;
+    line-height: 44px;
+    min-width: 150px;
+    font-size: 16px;
+    background: #fc3b3b;
+    border: none;
+    font-family: "NotoSansArmenian-Medium", "Roboto-Medium", sans-serif;
+    &:hover {
+      background: #c40a04;
+    }
+  }
+  .upload_file:hover {
+    button {
+      color: #969696;
+    }
+  }
+  .add_field:hover {
+    color: #969696;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .apply_online_modal {
+    width: 650px !important;
+    top: 20px !important;
+    .ant-modal-header {
+      padding-left: 45px;
+    }
+    .ant-modal-body {
+      padding: 24px 45px;
+    }
+    .ant-form {
+      .form_info_box {
+        h3 {
+          font-size: 20px;
+        }
+      }
+      .ant-btn-dashed {
+        font-size: 14px;
+        line-height: 19px;
+        font-family: "NotoSansArmenian-Regular", "Roboto-Regular", sans-serif;
+      }
+    }
+  }
+}
+@media screen and (max-width: 812px) {
+  .apply_online_modal {
+    .ant-col-md-12 {
+      width: 100%;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .apply_online_modal {
+    width: 700px !important;
+  }
+}

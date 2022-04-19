@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { createActions } from 'redux-actions';\nexport const {\n  getCurrantTime,\n  setCurrantTime\n} = createActions('GET_CURRANT_TIME', 'SET_CURRANT_TIME');","map":null,"metadata":{},"sourceType":"module"}

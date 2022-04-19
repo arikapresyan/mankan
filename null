@@ -1,0 +1,257 @@
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+Error: Requested and resolved page mismatch: /./WEB-INF/ /WEB-INF/
+    at Object.normalizePagePath (/var/www/mankan-front/node_modules/next/dist/next-server/server/normalize-page-path.js:16:15)
+    at Object.getPagePath (/var/www/mankan-front/node_modules/next/dist/next-server/server/require.js:22:38)
+    at Server.getPagePath (/var/www/mankan-front/node_modules/next/dist/next-server/server/next-server.js:394:26)
+    at Server.hasPage (/var/www/mankan-front/node_modules/next/dist/next-server/server/next-server.js:399:35)
+    at Object.fn (/var/www/mankan-front/node_modules/next/dist/next-server/server/router.js:116:44)
+    at Router.execute (/var/www/mankan-front/node_modules/next/dist/next-server/server/router.js:137:44)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async Server.run (/var/www/mankan-front/node_modules/next/dist/next-server/server/next-server.js:487:29)
+    at async Server.handleRequest (/var/www/mankan-front/node_modules/next/dist/next-server/server/next-server.js:139:20)
+Error: Requested and resolved page mismatch: /./WEB-INF/ /WEB-INF/
+    at Object.normalizePagePath (/var/www/mankan-front/node_modules/next/dist/next-server/server/normalize-page-path.js:16:15)
+    at getPagePath (/var/www/mankan-front/node_modules/next/dist/next-server/server/require.js:22:38)
+    at Object.requirePage (/var/www/mankan-front/node_modules/next/dist/next-server/server/require.js:42:22)
+    at Object.loadComponents (/var/www/mankan-front/node_modules/next/dist/next-server/server/load-components.js:27:36)
+    at Server.findPageComponents (/var/www/mankan-front/node_modules/next/dist/next-server/server/next-server.js:529:60)
+    at Server.renderToHTML (/var/www/mankan-front/node_modules/next/dist/next-server/server/next-server.js:772:39)
+    at Server.render (/var/www/mankan-front/node_modules/next/dist/next-server/server/next-server.js:514:33)
+    at Object.fn (/var/www/mankan-front/node_modules/next/dist/next-server/server/next-server.js:372:28)
+    at Router.execute (/var/www/mankan-front/node_modules/next/dist/next-server/server/router.js:137:44)
+    at runMicrotasks (<anonymous>)
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000
+
+> next_namkan_final@0.1.0 start /var/www/mankan-front
+>  next start -p 8000
+
+> Ready on http://localhost:8000

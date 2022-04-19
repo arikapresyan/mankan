@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\nimport { useIntl } from 'react-intl';\n\nconst EmptyData = () => {\n  const {\n    messages\n  } = useIntl();\n  return __jsx(\"div\", null, messages['local.no_vacancy_text']);\n};\n\nexport default EmptyData;","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,179 @@
+.transition(@sec: 0.4s) {
+  -webkit-transition: all @sec;
+  -moz-transition: all @sec;
+  -o-transition: all @sec;
+  transition: all @sec;
+}
+
+.shadow(@h-offset: 3px, @v-offset: 3px, @blur: 5px, @spread: 0, @color: rgba(0, 0, 0, 0.25)) {
+  -webkit-box-shadow: @h-offset @v-offset @blur @spread @color;
+  -moz-box-shadow: @h-offset @v-offset @blur @spread @color;
+  box-shadow: @h-offset @v-offset @blur @spread @color;
+}
+.changePasswordContainer {
+  position: relative;
+  height: calc(100vh - 450px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  .changePasswordForm {
+    width: 100%;
+    max-width: 568px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    padding: 55px 68px 0;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 16);
+    h1 {
+      font-size: 22px;
+      line-height: 30px;
+      color: #000;
+      margin-bottom: 34px;
+      text-align: center;
+      font-family: "NotoSansArmenian-SemiBold", sans-serif;
+    }
+    .ant-form-item {
+      margin-bottom: 0;
+      .ant-col.ant-form-item-label {
+        display: none;
+      }
+      .ant-form-item-control-wrapper {
+        margin-bottom: 24px;
+        .ant-input {
+          height: 50px;
+          border-radius: 35px;
+          padding-left: 29px;
+          border: 0.5px solid #aaa8a8;
+        }
+      }
+      &:nth-child(3) {
+        height: 40px;
+        margin-bottom: 24px;
+      }
+    }
+    .ant-checkbox + span {
+      color: #ff6464;
+      font-size: 14px;
+      line-height: 19px;
+      font-family: "NotoSansArmeninan-Regular", sans-serif;
+    }
+
+    .ant-checkbox-inner {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      border-color: #ff6464 !important;
+    }
+    .ant-checkbox-checked {
+      .ant-checkbox-inner {
+        border-radius: 50%;
+      }
+    }
+    .login_btn {
+      text-align: center;
+      .ant-btn {
+        border-radius: 50px;
+        width: 200px;
+        height: 60px;
+        line-height: 58px;
+        font-family: "NotoSansArmenian-Medium", "Roboto-Medium", sans-serif;
+        background: #c40a04;
+        border: none;
+        .shadow(0, 3px, 6px,  0, rgba(0, 0, 0, 0.2));
+        .transition();
+        span {
+          font-size: 18px;
+          line-height: 24px;
+        }
+        &:hover {
+          background: #c40a04;
+          .transition();
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 812px) {
+  .changePasswordContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    .changePasswordForm {
+      position: static;
+      transform: translate(0, 0);
+    }
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .changePasswordContainer {
+    height: calc(100vh + 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .changePasswordForm {
+      position: static;
+      transform: translate(0, 0);
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .changePasswordContainer {
+    height: calc(100vh + 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .changePasswordForm {
+      position: static;
+      transform: translate(0, 0);
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .changePasswordContainer {
+    height: calc(100vh - 300px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .changePasswordForm {
+      position: static;
+      transform: translate(0, 0);
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .changePasswordContainer {
+    height: calc(100vh - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .changePasswordForm {
+      position: static;
+      transform: translate(0, 0);
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .changePasswordContainer {
+    height: calc(100vh - 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .changePasswordForm {
+      position: static;
+      transform: translate(0, 0);
+    }
+  }
+}

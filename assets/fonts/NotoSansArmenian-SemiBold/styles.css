@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'NotoSansArmenian-SemiBold';
+  src: url('NotoSansArmenian-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('NotoSansArmenian-SemiBold.woff') format('woff'),
+  url('NotoSansArmenian-SemiBold.ttf')  format('truetype'),
+  url('NotoSansArmenian-SemiBold.svg#NotoSansArmenian-SemiBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

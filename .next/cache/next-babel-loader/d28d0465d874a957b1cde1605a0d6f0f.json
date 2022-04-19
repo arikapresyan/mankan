@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { createActions } from 'redux-actions';\nexport const {\n  changeGlobalInformationRouter,\n  resetGlobalInformationRouter\n} = createActions('CHANGE_GLOBAL_INFORMATION_ROUTER', 'RESET_GLOBAL_INFORMATION_ROUTER_SET');","map":null,"metadata":{},"sourceType":"module"}

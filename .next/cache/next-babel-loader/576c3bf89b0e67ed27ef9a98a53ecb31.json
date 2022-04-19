@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { createActions } from 'redux-actions';\nexport const {\n  getSingleData,\n  getSingleDataError,\n  getSingleDataSuccess,\n  resetSingleData\n} = createActions('GET_SINGLE_DATA', 'GET_SINGLE_DATA_ERROR', 'GET_SINGLE_DATA_SUCCESS', 'RESET_SINGLE_DATA');","map":null,"metadata":{},"sourceType":"module"}

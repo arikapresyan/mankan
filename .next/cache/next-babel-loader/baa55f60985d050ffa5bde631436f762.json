@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React, { memo } from 'react';\n\nfunction ProductOldPrice({\n  oldPrice,\n  text\n}) {\n  return oldPrice && __jsx(\"span\", {\n    className: \"old_price\"\n  }, text);\n}\n\nexport default memo(ProductOldPrice);","map":null,"metadata":{},"sourceType":"module"}

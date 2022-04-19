@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\nimport { Spin } from 'antd';\nimport './loader.less';\n\nconst Loader = () => __jsx(\"div\", {\n  className: \"nav_loader_container\"\n}, __jsx(Spin, null));\n\nexport default Loader;","map":null,"metadata":{},"sourceType":"module"}

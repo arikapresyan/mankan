@@ -1,0 +1,157 @@
+.transition(@sec: 0.4s) {
+  -webkit-transition: all @sec;
+  -moz-transition: all @sec;
+  -o-transition: all @sec;
+  transition: all @sec;
+}
+
+.shadow(@h-offset: 3px, @v-offset: 3px, @blur: 5px, @spread: 0, @color: rgba(0, 0, 0, 0.25)) {
+  -webkit-box-shadow: @h-offset @v-offset @blur @spread @color;
+  -moz-box-shadow: @h-offset @v-offset @blur @spread @color;
+  box-shadow: @h-offset @v-offset @blur @spread @color;
+}
+
+.login_modal {
+  width: 90% !important;
+  .ant-modal-body {
+    padding: 24px;
+  }
+  .ant-modal-content {
+    border-radius: 12px;
+  }
+  h2 {
+    color: #333;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 35px;
+    font-family: "NotoSansArmenian-Bold", "Roboto-Bold", sans-serif;
+  }
+  .ant-modal-close {
+    top: 30px;
+    right: 24px;
+  }
+  .ant-modal-close {
+    top: 16px;
+    right: 16px;
+    .ant-modal-close-x {
+      width: 20px;
+      height: 20px;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        color: #c40a04;
+      }
+    }
+  }
+  .ant-form {
+    .ant-form-item {
+      margin-bottom: 18px;
+      &:nth-child(3) {
+        margin-top: -16px;
+        margin-bottom: 30px;
+      }
+      &:nth-child(4) {
+        margin-bottom: 0;
+      }
+    }
+    .ant-input {
+      height: 40px;
+      border-radius: 25px;
+      padding-left: 20px;
+      &::-webkit-input-placeholder {
+        color: #828282;
+      }
+      &::-moz-placeholder {
+        color: #828282;
+      }
+      &:-moz-placeholder {
+        color: #828282;
+      }
+      &:-ms-input-placeholder {
+        color: #828282;
+      }
+    }
+    .ant-checkbox + span {
+      font-size: 14px;
+      line-height: 19px;
+      font-family: "NotoSansArmeninan-Regular", sans-serif;
+    }
+    .forgot_password {
+      float: right;
+      cursor: pointer;
+      text-decoration: underline;
+      color: #333;
+      font-size: 14px;
+      line-height: 19px;
+      margin-top: 12px;
+      font-family: "NotoSansArmeninan-Regular", sans-serif;
+      .transition();
+      &:hover {
+        color: #969696;
+        .transition();
+      }
+    }
+    .remember_pass:hover {
+      color: #969696;
+    }
+    .move_to_registration,
+    .login_btn {
+      text-align: center;
+      .ant-btn {
+        border-radius: 50px;
+        min-width: 150px;
+        height: 44px;
+        line-height: 42px;
+        font-family: "NotoSansArmenian-Medium", "Roboto-Medium", sans-serif;
+        font-size: 16px;
+        background: #fc3b3b;
+        border: none;
+        .shadow(0, 3px, 6px,  0, rgba(0, 0, 0, 0.2));
+        .transition();
+        span {
+          font-size: 18px;
+          line-height: 24px;
+        }
+        &:hover {
+          background: #c40a04;
+          .transition();
+        }
+      }
+    }
+    .move_to_registration {
+      span {
+        color: #333;
+        font-size: 14px;
+        cursor: pointer;
+        .transition();
+        &:hover {
+          color: #969696;
+          .transition();
+        }
+      }
+    }
+  }
+  .ant-checkbox-inner {
+    height: 18px;
+    width: 18px;
+  }
+}
+@media screen and (min-width: 567px) {
+  .login_modal {
+    width: 450px !important;
+    .ant-modal-close {
+      top: 40px;
+      right: 35px;
+      .ant-modal-close-x {
+        font-size: 20px;
+        font-family: "NotoSansArmenian-Bold", "Roboto-Bold", sans-serif;
+      }
+    }
+    .ant-modal-body {
+      padding: 30px 45px 15px;
+    }
+  }
+}

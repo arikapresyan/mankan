@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React, { memo } from 'react';\nimport { Input } from 'antd';\n\nfunction InputField(props) {\n  return __jsx(Input, props);\n}\n\nexport default memo(InputField);","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React, { memo } from 'react';\n\nconst Empty = ({\n  text\n}) => __jsx(\"div\", {\n  style: {\n    height: '100vh',\n    textAlign: 'center'\n  }\n}, __jsx(\"p\", null, text));\n\nexport default memo(Empty);","map":null,"metadata":{},"sourceType":"module"}

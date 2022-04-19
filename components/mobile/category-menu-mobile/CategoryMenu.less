@@ -1,0 +1,208 @@
+.category_menu_content {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  background: #f1f1f1;
+  height: 100%;
+  z-index: 90;
+  width: 100%;
+  padding-bottom: 70px;
+  overflow-y: auto;
+  .transition(@sec: 0.3s);
+  &.is_open {
+    left: 0;
+    .transition(@sec: 0.3s);
+  }
+
+  &.is_open {
+    display: block;
+  }
+  .go_to_profile {
+    background: #fff;
+    padding: 0 30px;
+    margin-bottom: 20px;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    line-height: 45px;
+    .anticon {
+      float: right;
+      line-height: 50px;
+      color: #aaa8a8;
+    }
+  }
+  .category_menu_mobile {
+    overflow: hidden;
+    .menu_icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 15px;
+      display: inline-block;
+      text-align: center;
+      display: none;
+      img {
+        max-width: 100%;
+      }
+    }
+    .ant-menu {
+      border-right: 0;
+    }
+    .ant-menu-submenu {
+      border-bottom: 1px solid #f1f1f1;
+      color: #333;
+      background: #fff;
+      &.ant-menu-submenu-selected {
+        background: #d4d4d4;
+      }
+      &:hover {
+        background: #d4d4d4;
+      }
+      .ant-menu-submenu-title {
+        height: 45px;
+        line-height: 45px;
+        margin: 0;
+        &:active {
+          background: #d4d4d4;
+        }
+      }
+      .ant-menu-submenu-arrow {
+        display: none;
+      }
+      .arrow_icon {
+        float: right;
+        margin: 0;
+        line-height: 50px;
+        color: #aaa8a8;
+      }
+      .cat_name {
+        color: #333;
+      }
+      .ant-menu-item {
+        background: none;
+        &.ant-menu-item-selected {
+          background: none;
+          border: none;
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.category_submenu_content {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  background: #f1f1f1;
+  height: 100%;
+  z-index: 90;
+  width: 100%;
+  padding-bottom: 70px;
+  overflow-y: auto;
+  .transition(@sec: 0.3s);
+  &.is_open {
+    left: 0;
+    .transition(@sec: 0.3s);
+  }
+
+  .go_back {
+    background: #fff;
+    padding: 0 30px;
+    margin-bottom: 20px;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    line-height: 45px;
+    cursor: pointer;
+    .anticon {
+      float: left;
+      line-height: 50px;
+      color: #aaa8a8;
+      margin-right: 20px;
+    }
+  }
+  .subcategory_menu {
+    overflow: hidden;
+    .ant-menu {
+      border-right: 0;
+      > .ant-menu-item {
+        border-bottom: 1px solid #f1f1f1;
+        color: #333;
+        background: #fff;
+        margin: 0;
+        height: 45px;
+        line-height: 45px;
+        padding: 0;
+        &:hover {
+          background: #d4d4d4;
+        }
+        &:after {
+          display: none;
+        }
+        &.ant-menu-item-selected {
+          background: #d4d4d4;
+        }
+        a {
+          color: #333;
+        }
+      }
+    }
+
+    .ant-menu-submenu {
+      border-bottom: 1px solid #f1f1f1;
+      color: #333;
+      background: #fff;
+      a {
+        color: #333;
+      }
+      &:hover {
+        background: #d4d4d4;
+      }
+      .ant-menu-submenu-title {
+        height: 45px;
+        line-height: 45px;
+        margin: 0;
+        &:active {
+          background: #d4d4d4;
+        }
+      }
+      .ant-menu-submenu-arrow {
+        display: none;
+      }
+      .arrow_icon {
+        float: right;
+        margin: 0;
+        line-height: 50px;
+        color: #aaa8a8;
+      }
+      .cat_name {
+        color: #333;
+      }
+      .ant-menu-item {
+        background: none;
+        border: none;
+        &:hover {
+          background: none;
+          a {
+            color: #c40a04;
+          }
+        }
+        &.ant-menu-item-selected {
+          background: none;
+          border: none;
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu_divider {
+  border-top: 20px solid #f1f1f1;
+}
+
+.category_submenu_content {
+  z-index: 99;
+}

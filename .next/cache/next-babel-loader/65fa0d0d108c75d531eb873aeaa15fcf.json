@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var selectMainSlides = function selectMainSlides(state) {\n  return state.mainSlides.data;\n};\nexport var selectMainSlidesLoading = function selectMainSlidesLoading(state) {\n  return state.mainSlides.loading;\n};","map":null,"metadata":{},"sourceType":"module"}

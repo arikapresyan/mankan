@@ -1,0 +1,15 @@
+{
+    "user": {
+        "view": {
+            "id": 27,
+            "firstName": "Seryozha",
+            "lastName": "Ivanyan",
+            "email": "serojssdssssd.ivanyan@gmail.com",
+            "lang": "ENG",
+            "isEmailConfirmed": false,
+            "phone": "+374 93 00 11 11"
+        }
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjI0LCJpYXQiOjE1NzY1OTMwNTd9.H34rrXVo9VjeI-KL48CIF-opkun20pBO0tVG4Ys9DDc",
+    "status": 200
+}

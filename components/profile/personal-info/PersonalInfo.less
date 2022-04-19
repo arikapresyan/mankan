@@ -1,0 +1,73 @@
+.transition(@sec: 0.4s) {
+  -webkit-transition: all @sec;
+  -moz-transition: all @sec;
+  -o-transition: all @sec;
+  transition: all @sec;
+}
+
+.shadow(@h-offset: 3px, @v-offset: 3px, @blur: 5px, @spread: 0, @color: rgba(0, 0, 0, 0.25)) {
+  -webkit-box-shadow: @h-offset @v-offset @blur @spread @color;
+  -moz-box-shadow: @h-offset @v-offset @blur @spread @color;
+  box-shadow: @h-offset @v-offset @blur @spread @color;
+}
+
+.personal_info_form {
+  background: #fff;
+  border-radius: 6px;
+  padding: 30px 20px 30px;
+  form {
+    .ant-form-item {
+      margin-bottom: 18px;
+    }
+    .ant-input {
+      border-radius: 35px;
+      height: 40px;
+    }
+    .change_pass {
+      color: #FC3B3B;
+      font-size: 16px;
+      display: inline-block;
+      margin-bottom: 25px;
+      margin-top: 5px;
+      cursor: pointer;
+      font-family: 'NotoSansArmenian-SemiBold', 'Roboto-Medium', sans-serif;
+      padding: 0;
+      span {
+        text-decoration: underline;
+      }
+      &:hover {
+        color: #969696;
+      }
+    }
+    .confirm_changes {
+      background: #FC3B3B;
+      .shadow(0, 3px, 6px,  0, rgba(0, 0, 0, 0.20));
+      border-radius: 35px;
+      height: 44px;
+      width: 100%;
+      border: none;
+      color: #fff;
+      font-size: 14px;
+      &:hover {
+        background: #c40a04;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .personal_info_form {
+    padding: 30px;
+    form {
+      .confirm_changes {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .personal_info_form {
+    form {
+      max-width: 430px;
+    }
+  }
+}

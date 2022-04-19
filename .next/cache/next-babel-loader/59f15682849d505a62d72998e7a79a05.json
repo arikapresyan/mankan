@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default as next } from './next.png';\nexport { default as notFound } from './404.svg';\nexport { default as notFound1 } from './404.png';","map":null,"metadata":{},"sourceType":"module"}

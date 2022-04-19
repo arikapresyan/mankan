@@ -1,0 +1,1 @@
+{"ast":null,"code":"const keys = {\n  isDevelopment: false,\n  HOST: process.env.REACT_APP_URL,\n  LOCAL_STORAGE_HEADER: 'authorization',\n  LOCAL_STORAGE_USER_INFO: 'user_info',\n  IMAGE_POSTFIX: `${process.env.REACT_APP_URL}/products/`,\n  DEFAULT_PRICE: [100, 100000]\n};\nexport default keys;","map":null,"metadata":{},"sourceType":"module"}
