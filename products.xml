@@ -1,0 +1,50 @@
+<ArrayOfProduct xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/SmartHostApp">
+<Product>
+<Id>1</Id>
+<Name>Product 1</Name>
+<SalePrice>50.000</SalePrice>
+<Count>10.000</Count>>
+</Product>
+<Product>
+<Id>2</Id>
+<Name>Product 2</Name>
+<SalePrice>50.000</SalePrice>
+<Count>100.000</Count>
+</Product>
+<Product>
+<Id>3</Id>
+<Name>Product 3</Name>
+<SalePrice>50.000</SalePrice>
+<Count>101.000</Count>
+</Product>
+<Product>
+<Id>4</Id>
+<Name>Product 4</Name>
+<SalePrice>500.000</SalePrice>
+<Count>2.000</Count>
+</Product>
+<Product>
+<Id>5</Id>
+<Name>Product 5</Name>
+<SalePrice>50.000</SalePrice>
+<Count>2.000</Count>
+</Product>
+<Product>
+<Id>7</Id>
+<Name>Product 6</Name>
+<SalePrice>66.000</SalePrice>
+<Count>98.000</Count>
+</Product>
+<Product>
+<Id>9</Id>
+<Name>Product 7</Name>
+<SalePrice>10.000</SalePrice>
+<Count>100000.000</Count>
+</Product>
+<Product>
+<Id>10</Id>
+<Name>Product 8</Name>
+<SalePrice>10.000</SalePrice>
+<Count>30.000</Count>
+</Product>
+</ArrayOfProduct>
