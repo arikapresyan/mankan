@@ -1,13 +1,13 @@
 FROM node:12
 
-WORKDIR /app
+WORKDIR /opt/frontend
 
-COPY package.json /app
+COPY package.json /opt/frontend
 
 RUN npm install
 
-COPY . /app
+COPY . /opt/frontend
 
-EXPOSE 80
+EXPOSE 8000
 
 CMD ["node", "server.js"]
