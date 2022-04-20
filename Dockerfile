@@ -4,7 +4,7 @@ WORKDIR /opt/cron
 
 COPY package.json /opt/cron
 
-RUN npm install
+#RUN npm install
 
 COPY . /opt/cron
 
