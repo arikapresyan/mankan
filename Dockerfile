@@ -9,4 +9,4 @@ COPY package.json /opt/cron
 COPY . /opt/cron
 
 EXPOSE 8900
-ENTRYPOINT start cron.js --start
+ENTRYPOINT cron.js --start
