@@ -16,3 +16,4 @@ ADD . /app
 WORKDIR /app
 # expose port 3000
 EXPOSE 8000
+CMD ["build","start"]
