@@ -6,7 +6,7 @@
 #EXPOSE 8000
 #ENTRYPOINT pm2 start npm -- start
 #CMD ["build","start"]
-FROM node
+FROM node:12.8.0-alpine
 ## Install dependencies in the root of the Container
 COPY package.json yarn.lock ./
 RUN npm
