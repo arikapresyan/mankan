@@ -10,4 +10,4 @@ COPY . /opt/frontend
 
 EXPOSE 8000
 # ENTRYPOINT pm2 start npm -- start
-CMD ["npm", "start"]
+CMD ["npm","dev","build","start"]
