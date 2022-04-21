@@ -9,4 +9,5 @@ RUN npm install
 COPY . /opt/backend
 
 EXPOSE 3000
-ENTRYPOINT pm2 start server.js
+#ENTRYPOINT pm2 start server.js
+CMD [ "npm", "start server.js"]
