@@ -10,4 +10,4 @@ COPY . /opt/backend
 
 EXPOSE 3000
 #ENTRYPOINT pm2 start server.js
-CMD [ "npm", "start"]
+CMD [ "npm", "server.js"]
