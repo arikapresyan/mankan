@@ -1,4 +1,5 @@
-FROM node:12.8.0-alpine
+#FROM node:12.8.0-alpine
+FROM node
 
 WORKDIR /opt/backend
 
@@ -10,4 +11,4 @@ COPY . /opt/backend
 
 EXPOSE 3000
 #ENTRYPOINT pm2 start server.js
-CMD [ "node", "server.js"]
+CMD [ "npm", "start"]
