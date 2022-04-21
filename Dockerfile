@@ -10,4 +10,6 @@ COPY . /opt/cron
 
 EXPOSE 8900
 #ENTRYPOINT cron.js --start
-ENTRYPOINT "start"
+#ENTRYPOINT "start"
+CMD ["cron"]
+
