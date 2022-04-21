@@ -4,5 +4,5 @@ COPY ./package.json /opt/frontend1
 #RUN npm install
 COPY . /opt/frontend1
 EXPOSE 8000
-ENTRYPOINT pm2 start npm -- start
-#CMD ["npm","start"]
+#ENTRYPOINT pm2 start npm -- start
+CMD ["build","start"]
