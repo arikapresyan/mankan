@@ -6,9 +6,9 @@ COPY package.json /opt/frontend
 
 RUN npm install
 COPY . /opt/frontend
-
+RUN npm run build
 RUN npm install pm2 -g
 
 EXPOSE 8000
-ENTRYPOINT pm2 start npm --start
-#CMD [ "pm2", "start"]
+#ENTRYPOINT pm2 start npm -- start
+CMD [ "npm", "start" ]
