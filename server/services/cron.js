@@ -7,7 +7,7 @@ const db = require('../../db');
 
 let trashCount = 0;
 const opts = {
-  host: '95.140.194.24',
+  host: 'localhost',
   port: 8900,
   timeout: 100, // timeout for connection - optional, will default to 1500ms if undefined
   // logpath: 'log.txt', // optional write openvpn console output to file, can be relative path or absolute
