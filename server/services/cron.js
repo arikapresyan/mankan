@@ -130,7 +130,7 @@ const cronService = new CronJob('*/30 * * * * * ', (async () => {
     console.log(('trashCount doest working'));
   }
   try {
-    const response = await axios.get('http://95.140.194.24:8900/api/ReminderByDate?id=16&id2=0', { timeout: 15000 });
+    const response = await axios.get('http://localhost:8900/api/ReminderByDate?id=16&id2=0', { timeout: 15000 });
 
     if (successCount === 0) {
       console.log('crone is working');
