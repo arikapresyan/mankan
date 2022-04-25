@@ -2,7 +2,7 @@ FROM node:14.18.0-alpine
 WORKDIR /opt/backend
 
 COPY package.json /opt/backend
-
+RUN npm install redis
 RUN npm install
 
 COPY . /opt/backend
