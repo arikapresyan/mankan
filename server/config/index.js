@@ -11,8 +11,8 @@ const config = {
   POSTGRES_PASS: process.env.POSTGRES_PASS || 'post',
   POSTGRES_HOST: !process.env.POSTGRES_HOST || process.env.NODE_ENV === 'development' ? 'localhost' : ip.address(),
   POSTGRES_PORT: process.env.PORT || 5432,
-  // POSTGRES_URL: process.env.POSTGRES || 'postgres://postgres:post@host.docker.internal:5432/postgres',
-  REDIS_URL: process.env.REDIS_URL || 'redis://host.docker.internal:6379',
+  // POSTGRES_URL: process.env.POSTGRES || 'postgres://postgres:post@localhost:5432/postgres',
+  REDIS_URL: process.env.REDIS_URL || 'redis://localhost:6379',
 };
 
 
