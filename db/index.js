@@ -9,13 +9,13 @@ const {
 bluebird.promisifyAll(redis.RedisClient.prototype);
 bluebird.promisifyAll(redis.Multi.prototype);
 
-// 'postgres://postgres:post@host.docker.internal:5432/postgres';
+// 'postgres://postgres:post@localhost:5432/postgres';
 const models = require('./models');
 
 const logging = process.env.SEQUELIZE_LOG !== 'production' ? (msg) => { console.log(msg); } : false;
 // const seq = new Sequelize(`postgres://${POSTGRES_USER}:${POSTGRES_PASS}@${POSTGRES_HOST}:${POSTGRES_PORT}/${DATABASE_NAME}`, {
-// const seq = new Sequelize('postgres://postgres:postgres@host.docker.internal:5432/postgres', {
-const seq = new Sequelize('postgres://postgres:post@host.docker.internal:5432/postgres', {
+// const seq = new Sequelize('postgres://postgres:postgres@localhost:5432/postgres', {
+const seq = new Sequelize('postgres://postgres:post@localhost:5432/postgres', {
 
   dialect: 'postgres',
   dialectOptions: {
