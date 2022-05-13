@@ -3,7 +3,7 @@ FROM node:14.15.5
 WORKDIR /opt/backend
 
 COPY package.json /opt/backend
-RUN npm install npm@6.14.11 -g
+#RUN npm install npm@6.14.11 -g
 RUN npm install
 
 COPY . /opt/backend
