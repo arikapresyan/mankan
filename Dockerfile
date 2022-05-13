@@ -9,7 +9,9 @@ RUN  npm install pm2 -g
 COPY . /opt/backend
 
 EXPOSE 3000
-ENTRYPOINT ["/bin/bash", "-c", "./docker-entrypoint.sh"]
+COPY ./docker-entrypoint.sh /docker-entrypoint.sh
+RUN chmod +x /docker-entrypoint.sh
+ENTRYPOINT ["/bin/bash", "-c", "/docker-entrypoint.sh"]
 # RUN npm install pm2 -g
 # ENTRYPOINT pm2 start server.js -- start
 #CMD ["node", "server.js"]
